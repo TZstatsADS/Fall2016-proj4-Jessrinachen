@@ -31,7 +31,24 @@ Term: Fall 2016
 
 + 2. Topic Models
 
-+ First, I made a cluster analysis. A plot of the within groups sum of squares by number of clusters shows that the 22~25 clusters are Suitable for the MSD dataset. Ward.D2 hierarchical clustering with cosine distance using the cluster effect is shown in the /fig folder. Based on perplexity and loglikelihood for different topic k model, the 20-25 topic model is better.
++ First, I made cluster analysis. 
+
+
+![kmeans_cluster](https://github.com/TZstatsADS/Fall2016-proj4-Jessrinachen/blob/master/figs/kmeans_cluster.png)
+
+
++ A plot of the within groups sum of squares by number of clusters shows that the 22~25 clusters are Suitable for the MSD dataset. 
+
+
+![Ward.D2 hierachical cluster](https://github.com/TZstatsADS/Fall2016-proj4-Jessrinachen/blob/master/figs/hclust.png)
+
+![hclust_phylo](https://github.com/TZstatsADS/Fall2016-proj4-Jessrinachen/blob/master/figs/hclust_phylo.png)
+
++ Ward.D2 hierachical clustering with cosine distance using the clustering effect.
+
+
+
+Ward.D2 hierarchical clustering with cosine distance using the cluster effect  Based on perplexity and loglikelihood for different topic k model, the 20-25 topic model is better.
 + Next, I considered the LDA_VEM, LDA_VEM Fixed, LDA_Gibbs and CTM for the 2350 songs. Assuming the number of topic k is equal to  22, the probability distributions of the four models to the most probable topic are It is easy to see that LDA_VEM and CTM Of the topic is relatively dispersed, and LDA_VEM_fixed LDA_Gibbs and a few themes in a larger proportion, LDA_Gibbs the degree of confusion is minimal. Assuming the number of subjects k = 22, the probability distributions of the four models to the most probable topic are as follows. It is easy to see that LDA_VEM and CTM Of the topic is relatively dispersed, in contrast LDA_VEM_fixed and LDA_Gibbs are a few themes in a larger proportion, the perplexity of LDA_Gibbs  is minimal, therefore, the LDA_Gibbs  algorithm is the best.
 
 I actually eliminated all the words that have less than 3 letters. 
