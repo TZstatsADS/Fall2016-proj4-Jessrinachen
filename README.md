@@ -25,13 +25,13 @@ Term: Fall 2016
 
 + Part2: Basic Methods of recommendation system:
 
-+ 1. Similarity Matrix(Cosine Distance):
++ Method 1: Similarity Matrix(Cosine Distance):
 
 + Since we want to find the association between the new 100 songs and the 5000 dictionary words. We can use this 2350 songs as latent factor, then connect new songs and this old set of songs using distance based similarities(cosine distance). It is a matrix with dimension of 100*2350, and then we can multiply it by this known song-words matrix(which is a known connection). This works since we find similarities between the training songs and the testing songs, then we continue to find the dictionary words in the training data set. Her ewe use all of the training songs with weights based on similarities. For this method, I extracted mean and standard deviation of the features. Please find the code in the /lib folder.
 
-+ 2. Topic Models
++ Method 2: Topic Models
 
-+ First, I made cluster analysis. 
++ Cluster Analysis. 
 
 
 ![kmeans_cluster](https://github.com/TZstatsADS/Fall2016-proj4-Jessrinachen/blob/master/figs/kmeans_cluster.png)
@@ -45,6 +45,11 @@ Term: Fall 2016
 ![hclust_phylo](https://github.com/TZstatsADS/Fall2016-proj4-Jessrinachen/blob/master/figs/hclust_phylo.png)
 
 + Ward.D2 hierachical clustering with cosine distance using the clustering effect.
+
+
+![number of topics_1](https://github.com/TZstatsADS/Fall2016-proj4-Jessrinachen/blob/master/figs/Perplexity2_1gibbs5_100.png)
+
+![number_of_topics_2](https://github.com/TZstatsADS/Fall2016-proj4-Jessrinachen/blob/master/figs/LogLikelihood2_gibbs5_100.png)
 
 
 
