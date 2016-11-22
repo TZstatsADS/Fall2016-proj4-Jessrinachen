@@ -10,6 +10,9 @@ Term: Fall 2016
 + [Data description](doc/readme.html)
 + Contributor's name: Yanxi Chen
 + Projec title: Word For Music
+
+![words](https://github.com/TZstatsADS/Fall2016-proj4-Jessrinachen/blob/master/figs/words.png)
+
 + Project summary: In this project, we want to find the association between the features and lyrics then rank the possible words. I considered two method to build the recommendation system: 1. Similarity Matrix(cosine distance) 2. Topic Models
 
 + Part1: Association Pattern
@@ -52,9 +55,24 @@ Term: Fall 2016
 ![number_of_topics_2](https://github.com/TZstatsADS/Fall2016-proj4-Jessrinachen/blob/master/figs/LogLikelihood2_gibbs5_100.png)
 
 
++ Ward.D2 hierarchical clustering with cosine distance using the clustering effect Based on perplexity and loglikelihood for different topic k model, the 20-25 topic model is better.
 
-Ward.D2 hierarchical clustering with cosine distance using the cluster effect  Based on perplexity and loglikelihood for different topic k model, the 20-25 topic model is better.
-+ Next, I considered the LDA_VEM, LDA_VEM Fixed, LDA_Gibbs and CTM for the 2350 songs. Assuming the number of topic k is equal to  22, the probability distributions of the four models to the most probable topic are It is easy to see that LDA_VEM and CTM Of the topic is relatively dispersed, and LDA_VEM_fixed LDA_Gibbs and a few themes in a larger proportion, LDA_Gibbs the degree of confusion is minimal. Assuming the number of subjects k = 22, the probability distributions of the four models to the most probable topic are as follows. It is easy to see that LDA_VEM and CTM Of the topic is relatively dispersed, in contrast LDA_VEM_fixed and LDA_Gibbs are a few themes in a larger proportion, the perplexity of LDA_Gibbs  is minimal, therefore, the LDA_Gibbs  algorithm is the best.
++ I considered the model of LDA_VEM, LDA_VEM_fixed, LDA_Gibbs, CTM for the 2350 songs. Assuming the number of topic k is equal to 22, the probability distributions of the four models to the most probable topic are as follows. 
+
+![probability](https://github.com/TZstatsADS/Fall2016-proj4-Jessrinachen/blob/master/figs/maxProb.png)
+
+![probability](https://github.com/TZstatsADS/Fall2016-proj4-Jessrinachen/blob/master/figs/Cosine_LDA_VEM%20VS%20LDA_GIBBS.png)
+
+
+
+
+
+
+
+
+It is easy to see that LDA_VEM and CTM Of the topic is relatively dispersed, and LDA_VEM_fixed LDA_Gibbs and a few themes in a larger proportion, LDA_Gibbs the degree of confusion is minimal. Assuming the number of subjects k = 22, the probability distributions of the four models to the most probable topic are as follows. It is easy to see that LDA_VEM and CTM Of the topic is relatively dispersed, in contrast LDA_VEM_fixed and LDA_Gibbs are a few themes in a larger proportion, the perplexity of LDA_Gibbs  is minimal, therefore, the LDA_Gibbs  algorithm is the best.
+
+
 
 I actually eliminated all the words that have less than 3 letters. 
 Then, with the 0.2 support and 0.6 confidence we obtain one thousand eight hundred eighty two rules.
