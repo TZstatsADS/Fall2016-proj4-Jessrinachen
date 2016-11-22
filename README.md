@@ -17,6 +17,8 @@ Term: Fall 2016
 + I explored the association patterns using association rule. After transforming the lyrics matrix into a binary output matrix, we would expect a relatively high confidence and support since lower values would generate too many rules. After several attempts, I set support=0.2 and confidence=0.6. This still gives 1 million plus rules. I realized that there are many very common words like, 'is', 'it'. The words seem not meaningful as we want to find association rules among some featured words. Next, from the frequency of the words, I noticed that there are many words that can be removed since we do not have interests on them. Such as 'the', 'it', and 'is'. I actually eliminated all the words that have less than 3 letters.Then， with the 0.2 support and 0.6 confidence we obtain 1882 rules. After this procedure, the result looks better afterward and notice that all the top 30 on the left hand side indicate on their Right hand side the word {you}. 
 
 
++ Visualizing Association Rules
+
 
 ![Visualizing association rules]( https://github.com/TZstatsADS/Fall2016-proj4-Jessrinachen/blob/master/figs/visualizing%20association%20rules.png)
 
