@@ -13,7 +13,7 @@ Term: Fall 2016
 
 ![words](https://github.com/TZstatsADS/Fall2016-proj4-Jessrinachen/blob/master/figs/words.png)
 
-+ Project summary: In this project, we want to find the association between the features and lyrics then rank the possible words. I considered two method to build the recommendation system: 1. Similarity Matrix(cosine distance) 2. Topic Models.
++ Project Summary: In this project, we want to find the association between the features and lyrics then rank the possible words. I considered two method to build the recommendation system: 1. Similarity Matrix(cosine distance) 2. Topic Models.
 
 + Part1: Association Pattern
 
@@ -26,7 +26,7 @@ Term: Fall 2016
 ![Visualizing association rules]( https://github.com/TZstatsADS/Fall2016-proj4-Jessrinachen/blob/master/figs/visualizing%20association%20rules.png)
 
 
-+ Part2: Basic Methods of recommendation system:
++ Part2: Basic Methods of Recommendation System:
 
 + Method 1: Similarity Matrix(Cosine Distance):
 
@@ -48,7 +48,7 @@ Term: Fall 2016
 
 ![hclust_phylo](https://github.com/TZstatsADS/Fall2016-proj4-Jessrinachen/blob/master/figs/hclust_phylo.png)
 
-+ Ward.D2 hierachical clustering with cosine distance using the clustering effect.
++ Ward.D2 Hierachical Clustering with Cosine Distance using the Clustering Effect
 
 
 ![number of topics_1](https://github.com/TZstatsADS/Fall2016-proj4-Jessrinachen/blob/master/figs/Perplexity2_1gibbs5_100.png)
