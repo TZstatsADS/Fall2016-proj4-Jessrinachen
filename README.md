@@ -13,7 +13,7 @@ Term: Fall 2016
 
 ![words](https://github.com/TZstatsADS/Fall2016-proj4-Jessrinachen/blob/master/figs/words.png)
 
-+ Project summary: In this project, we want to find the association between the features and lyrics then rank the possible words. I considered two method to build the recommendation system: 1. Similarity Matrix(cosine distance) 2. Topic Models
++ Project summary: In this project, we want to find the association between the features and lyrics then rank the possible words. I considered two method to build the recommendation system: 1. Similarity Matrix(cosine distance) 2. Topic Models.
 
 + Part1: Association Pattern
 
@@ -31,6 +31,7 @@ Term: Fall 2016
 + Method 1: Similarity Matrix(Cosine Distance):
 
 + Since we want to find the association between the new 100 songs and the 5000 dictionary words. We can use this 2350 songs as latent factor, then connect new songs and this old set of songs using distance based similarities(cosine distance). It is a matrix with dimension of 100*2350, and then we can multiply it by this known song-words matrix(which is a known connection). This works since we find similarities between the training songs and the testing songs, then we continue to find the dictionary words in the training data set. Her ewe use all of the training songs with weights based on similarities. For this method, I extracted mean and standard deviation of the features. Please find the code in the /lib folder.
+
 
 + Method 2: Topic Models
 
@@ -61,21 +62,18 @@ Term: Fall 2016
 
 ![probability](https://github.com/TZstatsADS/Fall2016-proj4-Jessrinachen/blob/master/figs/maxProb.png)
 
++ It is easy to see that LDA_VEM and CTM of the topic is relatively dispersed. It is easy to see that LDA_VEM and CTM Of the topic is relatively dispersed, the perplexity of LDA_Gibbs is the minimum, therefore, the LDA_Gibbs algorithm is the best.
+
 ![probability](https://github.com/TZstatsADS/Fall2016-proj4-Jessrinachen/blob/master/figs/Cosine_LDA_VEM%20VS%20LDA_GIBBS.png)
 
++ According to the matrix, LDA_VEM and LDA_Gibbs cosine similarity of topics as in the figure. The lighter (yellow) the color, the higher the similarity.
+
++ Topic Model Visualization
+
+![Topic model visualization](https://github.com/TZstatsADS/Fall2016-proj4-Jessrinachen/blob/master/figs/Topic%20model%20visual.png)
 
 
 
-
-
-
-
-It is easy to see that LDA_VEM and CTM Of the topic is relatively dispersed, and LDA_VEM_fixed LDA_Gibbs and a few themes in a larger proportion, LDA_Gibbs the degree of confusion is minimal. Assuming the number of subjects k = 22, the probability distributions of the four models to the most probable topic are as follows. It is easy to see that LDA_VEM and CTM Of the topic is relatively dispersed, in contrast LDA_VEM_fixed and LDA_Gibbs are a few themes in a larger proportion, the perplexity of LDA_Gibbs  is minimal, therefore, the LDA_Gibbs  algorithm is the best.
-
-
-
-I actually eliminated all the words that have less than 3 letters. 
-Then, with the 0.2 support and 0.6 confidence we obtain one thousand eight hundred eighty two rules.
 
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
 
