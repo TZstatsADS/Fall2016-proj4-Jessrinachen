@@ -11,7 +11,7 @@ Term: Fall 2016
 + Contributor's name: Yanxi Chen
 + Projec title: Word For Music
 
-![words](https://github.com/TZstatsADS/Fall2016-proj4-Jessrinachen/blob/master/figs/words.png)
+![words](https://github.com/TZstatsADS/Fall2016-proj5-grp6/blob/master/figs/shows_img/broadwayshow%20title.jpeg)
 
 + Project Summary: In this project, we want to find the association between the features and lyrics then rank the possible words. I considered two method to build the recommendation system: 1. Similarity Matrix(cosine distance) 2. Topic Models.
 
